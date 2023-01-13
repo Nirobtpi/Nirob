@@ -1,0 +1,158 @@
+.testimonial-area {
+    width: 100%;
+    position: relative;
+
+    .testimonial-heading {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        .testimonial {
+
+            h3 {
+                position: relative;
+                display: inline-block;
+                letter-spacing: 0.1rem;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 70%;
+                    top: 14px;
+                    right: -11rem;
+                    height: 0.3rem;
+                    background: var(--yellow);
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 70%;
+                    top: 14px;
+                    left: -11rem;
+                    height: 0.3rem;
+                    background: var(--yellow);
+                }
+            }
+        }
+
+        h2 {
+            text-transform: uppercase !important;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+        }
+
+        p {
+            max-width: 80rem;
+            margin: auto;
+            font-size: 1.7rem;
+            padding-top: 1rem;
+            letter-spacing: normal;
+        }
+    }
+
+    #myCarousel {
+        background: transparent;
+        position: relative;
+
+        .client {
+            background: #fff;
+            padding: 3rem;
+            margin: 9rem 1rem;
+            position: relative;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            border-radius: 0.5rem;
+
+            .my-client {
+
+                .img-cl {
+                    position: absolute;
+                    top: -4rem;
+
+                    img {
+                        width: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                .ratting {
+                    margin-top: 6rem;
+                    z-index: 999;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            padding: 0rem 0.5rem;
+
+                            i {
+                                font-size: 1.5rem;
+                                color: var(--yellow);
+                            }
+
+                            &:first-child {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+
+                .content {
+                    h3 {
+                        padding: 1.5rem 0;
+                        letter-spacing: 1px;
+                        color: var(--dark);
+                    }
+
+                    p {
+                        letter-spacing: normal;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// #myCarousel .owl-nav .owl-prev:hover{
+//     background: none;
+// }
+// #myCarousel .owl-nav .owl-next:hover{
+//     background: none;
+// }
+#myCarousel.owl-theme .owl-nav {
+    margin-top: -5rem;
+    z-index: 999;
+    padding-bottom: 3rem;
+}
+
+#myCarousel .owl-nav .owl-prev,
+#myCarousel .owl-nav .owl-next {
+    background: var(--yellow);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.5rem solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    outline: 0.5rem solid var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myCarousel .owl-nav .owl-prev {
+    position: absolute;
+    left: 44%;
+}
+
+#myCarousel .owl-nav .owl-next {
+    position: absolute;
+    right: 44%;
+}
+
+#myCarousel .owl-nav .owl-prev i,
+#myCarousel .owl-nav .owl-next i {
+    font-size: 2.5rem;
+    color: #fff;
+}

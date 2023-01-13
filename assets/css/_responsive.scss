@@ -1,0 +1,288 @@
+@media all and (max-width:1200px) {
+    .container {
+        width: 95%;
+    }
+
+    .skill-area .skill-items .single-skill {
+        flex-basis: 45%;
+    }
+
+    .skill-area .skill-items .single-skill h2 {
+        max-width: 100%;
+        font-size: 3rem;
+    }
+
+    // .portfolio-area .item-deatiles .col-3 {
+    //     width: 450px;
+    // }
+
+    // .portfolio-area .item-deatiles {
+    //     margin: auto 22rem;
+    // }
+
+
+    .blog-area .blog-items .single-item .my-blog .my-img {
+        width: 18rem;
+    }
+
+    .blog-area .blog-items .single-item .my-blog .my-img h2 {
+        font-size: 1.2rem;
+    }
+
+    .blog-area .blog-items .single-item .my-blog .date .this-date {
+        font-size: 1.2rem;
+    }
+
+    #myCarousel .owl-nav .owl-prev {
+        left: 43%;
+    }
+
+    #myCarousel .owl-nav .owl-next {
+        right: 43%;
+    }
+}
+
+@media all and (max-width:991px) {
+    .container {
+        width: 90%;
+    }
+
+    .main-header .header {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .main-header .header .logo-area .bar .show-menu {
+        display: block;
+    }
+
+    .main-header .header .menu {
+        display: block;
+        position: absolute;
+        top: 8rem;
+        right: 0;
+        width: 0%;
+        height: 100vh;
+        overflow: hidden;
+        transition: 0.5s all ease;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 9999;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .main-header .header .menu.me {
+        width: 100%;
+        opacity: 1;
+        visibility: initial;
+    }
+
+    .main-header .header .menu ul {
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        right: -100%;
+        background: skyblue;
+        height: 100%;
+        transition: 0.5s all ease;
+    }
+
+    .main-header .header .menu ul.slide {
+        right: 0;
+    }
+
+    .main-header .header .menu ul li {
+        padding: 2rem 0rem;
+    }
+
+    .main-header .header .menu ul li:first-child {
+        padding-top: 1.5rem;
+    }
+
+    .about-area .about-items {
+        flex-wrap: wrap;
+    }
+
+    .about-area .about-items .single-item {
+        flex-basis: 100%;
+    }
+
+    .about-area .about-items .single-item-2 {
+        flex-basis: 100%;
+        order: -1;
+        margin-bottom: 3rem;
+    }
+
+    .services-area .services-items .single-item {
+        flex-basis: 48%;
+    }
+
+    #myCarousel .owl-nav .owl-prev {
+        left: 38%;
+    }
+
+    .skill-area .skill-items {
+        flex-wrap: wrap;
+    }
+
+    .skill-area .skill-items .single-skill {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .client-area .row {
+        flex-wrap: wrap;
+    }
+
+    .client-area .row .col-3 {
+        flex-basis: 100%;
+    }
+
+    // .portfolio-area .item-deatiles {
+    //     margin: auto 12rem;
+    // }
+
+    // .portfolio-area .item-deatiles .col-3 {
+    //     width: calc(100% /3 -2%);
+    // }
+
+    .portfolio-area .item-deatiles .col-3 .overly .iam {
+        font-size: 1.2rem;
+    }
+
+    // .portfolio-area .item-deatiles .col-3 {
+    //     margin: 2rem 8rem;
+    // }
+
+    .blog-area .blog-items {
+        flex-wrap: wrap;
+    }
+
+    .blog-area .blog-items .single-item {
+        flex-basis: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .contact-area .contact-items {
+        flex-wrap: wrap;
+    }
+
+    .contact-area .contact-items .first-contact {
+        flex-basis: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .contact-area .contact-items .second-item {
+        flex-basis: 100%;
+    }
+}
+
+@media all and (max-width:767px) {
+    .about-area .about-items .single-item .detailes {
+        flex-wrap: wrap;
+    }
+
+    .about-area .about-items .single-item .detailes .first-item {
+        flex-basis: 100%;
+    }
+
+    .about-area .about-items .single-item .detailes .second-item {
+        flex-basis: 100%;
+    }
+
+    .services-area .services-items .single-item {
+        flex-basis: 100%;
+    }
+
+    // .portfolio-area .item-deatiles {
+    //     margin: auto 2rem;
+    // }
+    .portfolio-area .item-deatiles .col-3 {
+        width: calc(100% /1);
+        margin: 1%;
+    }
+
+    .testimonial-area {
+        padding-bottom: 0;
+    }
+
+    #myCarousel .owl-nav .owl-prev,
+    #myCarousel .owl-nav .owl-next {
+        display: none;
+    }
+
+    .blog-area .button {
+        text-align: center;
+        padding: 3rem 0rem 0rem 0rem;
+    }
+}
+
+@media all and (max-width:575px) {
+    .header-area .banner .change h1 {
+        font-size: 3rem;
+    }
+
+    // .portfolio-area .item-deatiles .col-3 {
+    //     width: 350px;
+    // }
+
+    .contact-area .contact-items .second-item .form form .full textarea {
+        padding: 1rem 0rem 4rem 0rem;
+    }
+}
+
+@media all and (max-width:480px) {
+    .header-area .banner h2 {
+        font-size: 2rem;
+    }
+
+    .header-area .banner .change h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-area .about-items .single-item-2 .img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .skill-area .skill-items .single-skill h2 {
+        font-size: 2.3rem;
+    }
+
+    // .portfolio-area .item-deatiles .col-3 {
+    //     width: 250px;
+    // }
+    .portfolio-area .item-menu ul li {
+        padding: 0.5rem 1rem;
+    }
+
+    .testimonial-area .testimonial-heading .testimonial h3::before {
+        left: -9rem;
+    }
+
+    .testimonial-area .testimonial-heading .testimonial h3::after {
+        right: -9rem;
+    }
+
+    .blog-area .blog-heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .blog-area .blog-items .single-item .my-blog {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .blog-area .blog-items .single-item .my-blog .date {
+        margin-left: 0rem;
+    }
+
+    .blog-area .blog-items .single-item .my-blog .date .this-date {
+        font-size: 1.5rem;
+    }
+
+    .blog-area .blog-items .single-item .my-blog .my-img {
+        margin-bottom: 1.5rem;
+    }
+}

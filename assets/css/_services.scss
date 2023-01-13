@@ -1,0 +1,132 @@
+.services-area {
+    width: 100%;
+    position: relative;
+    background: #FFFFFF;
+    .services-heading {
+        text-align: center;
+        margin-bottom: 7rem;
+
+        .services {
+
+            h3 {
+                position: relative;
+                display: inline-block;
+                letter-spacing: 0.1rem;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 70%;
+                    top: 14px;
+                    right: -7rem;
+                    height: 0.3rem;
+                    background: var(--yellow);
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 70%;
+                    top: 14px;
+                    left: -7rem;
+                    height: 0.3rem;
+                    background: var(--yellow);
+                }
+            }
+        }
+
+        h2 {
+            text-transform: uppercase !important;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+        }
+
+        p {
+            max-width: 80rem;
+            margin: auto;
+            font-size: 1.7rem;
+            padding-top: 1rem;
+            letter-spacing: normal;
+        }
+    }
+
+    .services-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .single-item {
+            flex-basis: 31%;
+            background: var(--light);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            margin-bottom: 4rem;
+            border-radius: 0.5rem;
+            
+
+            .number {
+                padding: 3rem 0;
+                border-bottom: 0.1rem solid #ddd;
+                text-align: right;
+                position: relative;
+                overflow: hidden;
+
+                .my-number {
+                    position: absolute;
+                    top: 2.5rem;
+                    right: 2rem;
+                    font-size: 4rem;
+                    font-weight: 700;
+                    color: #ddd;
+                    transition: 0.3s all ease;
+                }
+            }
+
+            .main-padding {
+                padding: 3rem;
+
+                .heading {
+
+                    h2 {
+                        text-align: center;
+                        font-size: 2.4rem;
+                    }
+                }
+
+                .sc-icon {
+                    margin: 3rem auto;
+
+                    i {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: var(--white);
+                        font-size: 5rem;
+                        width: 10rem;
+                        height: 10rem;
+                        background: var(--yellow);
+                        margin: auto;
+                        transition: 0.5s all ease;
+                    }
+                }
+
+                .content-p {
+                    text-align: center;
+
+                    p {
+                        font-size: 1.4rem;
+                        letter-spacing: normal;
+                    }
+                }
+            }
+
+            &:hover .sc-icon i {
+                transform: rotateY(-180deg);
+            }
+
+            &:hover .number .my-number {
+                top: 0;
+            }
+        }
+    }
+}
